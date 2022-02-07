@@ -64,6 +64,9 @@ class CardGame(Deck):
 if __name__=='__main__':
     game = CardGame(3)
     game.play()
+    print("hello world")
+
+
 
 
     
