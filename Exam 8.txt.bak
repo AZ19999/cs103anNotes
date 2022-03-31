@@ -52,26 +52,26 @@
 %>
 
 <h2> Exam 8b: Large CS courses since 2004 </h2>
-	<table class="table table-bordered table-striped">
-		<thead>
-			<tr>
-				<th>
-					Course
-				</th>
-				<th>
-					Semester
-				</th>
-				<th>
-					Instructor
-				</th>
-				<th>
-					title
-				</th>
-				<th>
-					Enrollment
-				</th>
-			</tr>
-		</thead>
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th>
+				Course
+			</th>
+			<th>
+				Semester
+			</th>
+			<th>
+				Instructor
+			</th>
+			<th>
+				title
+			</th>
+			<th>
+				Enrollment
+			</th>
+		</tr>
+	</thead>
 		<tbody>
 			<% for (course of courses){ %>
 			<tr>
@@ -92,5 +92,5 @@
 				</td>
 			</tr>
 			<% } %>
-	</tbody
-	</table>
+		</tbody
+</table>
