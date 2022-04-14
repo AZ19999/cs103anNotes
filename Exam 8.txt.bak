@@ -72,8 +72,8 @@
 			</th>
 		</tr>
 	</thead>
-		<tbody>
-			<% for (course of courses){ %>
+	<tbody>
+		<% for (course of courses){ %>
 			<tr>
 				<td>
 					<%= course['subj'] + course['num'] %>
@@ -91,6 +91,6 @@
 					<% = course['enr'] %>
 				</td>
 			</tr>
-			<% } %>
-		</tbody
+		<% } %>
+	</tbody
 </table>

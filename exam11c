@@ -1,0 +1,23 @@
+app.get("/exam11c", (req, res, next) => {
+  res.locals.units = false;
+  res.render("exam11c");
+});
+
+app.post("/exam11c", (req, res, next) => {
+  const {meters, units} = req.body;
+  var converter = 0;
+  res.locals.units = units;
+  res.locals.meters = meters;
+  if(units == "inches"){
+    converter = 39.2701
+  }
+  else if(units == "feet"){
+    converter = 3.2804
+  }
+  else if(units == "yards") {
+    converter = 1.09361
+  }
+  const converted = parseInt(meters) * converter
+  res.locals.converted = converted
+  res.render("exam11c");
+});
